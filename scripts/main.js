@@ -183,7 +183,7 @@ function getPratoView(prato) {
         <div class="titulo">${prato.nome}</div>
         <div class="descricao">${prato.descricao}</div>
         <div class="fundo">
-            <div class="preco">R$ ${prato.preco.toFixed(2)}</div>
+            <div class="preco">R$ ${(prato.preco/100).toFixed(2)}</div>
             <div class="check">
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
@@ -204,7 +204,7 @@ function getBebidaView(bebida) {
         <div class="titulo">${bebida.nome}</div>
         <div class="descricao">${bebida.descricao}</div>
         <div class="fundo">
-            <div class="preco">R$ ${bebida.preco.toFixed(2)}</div>
+            <div class="preco">R$ ${(bebida.preco/100).toFixed(2)}</div>
             <div class="check">
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
@@ -225,7 +225,7 @@ function getSobremesaView(sobremesa) {
         <div class="titulo">${sobremesa.nome}</div>
         <div class="descricao">${sobremesa.descricao}</div>
         <div class="fundo">
-            <div class="preco">R$ ${sobremesa.preco.toFixed(2)}</div>
+            <div class="preco">R$ ${(sobremesa.preco/100).toFixed(2)}</div>
             <div class="check">
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
